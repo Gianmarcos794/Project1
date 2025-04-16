@@ -1,0 +1,107 @@
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    background: #fefefe;
+    color: #333;
+  }
+
+  h1 {
+    text-align: center;
+    color: #d35400;
+  }
+
+  input[type="text"] {
+    padding: 10px;
+    width: 60%;
+    max-width: 400px;
+    border: 2px solid #d35400;
+    border-radius: 6px;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: #d35400;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #e67e22;
+  }
+
+  #results {
+    margin-top: 30px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  .meal {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    background-color: #fff;
+  }
+
+  .meal img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+
+  .meal h2 {
+    color: #c0392b;
+    margin-top: 0;
+  }
+
+  ul {
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  li {
+    line-height: 1.6;
+  }
+
+  @media (max-width: 600px) {
+    input[type="text"] {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    button {
+      width: 100%;
+    }
+  }
+
+  .circular-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .circular-button:hover {
+    background-color: #0056b3;
+  }
+</style>
+

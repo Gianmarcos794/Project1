@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Recipe Finder - TheMealDB</title>
+  <link rel="stylesheet" href="style.css"> <!-- Correctly linked the CSS file -->
+</head>
+<body onload="initializeApp()">
+  <h1>🍽️ Recipe Finder</h1>
+  <p id="welcomeMessage"></p>
+  <input type="text" id="mealInput" placeholder="Enter a meal name..." />
+  <button onclick="searchMeal()">Search</button>
+  <button onclick="getRandomMeal()">Random Recipe</button>
+  <button onclick="logout()">Log Out</button>
+  <div id="results"></div>
+  <div id="randomMeal"></div>
+  <div id="mealDetails"></div>
+
+  <h2>Your Profile</h2>
+  <div id="profile">
+    <p id="profileInfo">Please sign up or log in to see your liked recipes.</p>
+    <div id="likedRecipes"></div>
+  </div>
+
+  <!-- Circular button -->
+  <button id="profileButton" class="circular-button" onclick="goToProfile()">Profile</button>
+
+  <script src="app.js"></script>
+  <script>
+    // Function to navigate to the profile page
+    function goToProfile() {
+      window.location.href = "profile.html";
+    }
+  </script>
+</body>
+</html>
